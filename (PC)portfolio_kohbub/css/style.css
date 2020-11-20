@@ -1,0 +1,207 @@
+/*전체 초기화*/
+html { overflow-y:scroll; }
+body { margin:0;padding:0;font-size:0.75em; font-family: 'Noto Sans KR', sans-serif; background:#fff; }
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img { margin:0;padding:0;border:0; }
+h1, h2, h3, h4, h5, h6 { font-size:1em; font-family: 'Noto Sans KR', sans-serif; font-weight: inherit; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+
+ul, dl,dt,dd { margin:0;padding:0;list-style:none; }
+legend { position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em; overflow:hidden; }
+label, input, button, select, img { vertical-align:middle; font-size:1em; margin-left:15px;  }
+input, button { margin:0;padding:0;font-family: 'Noto Sans KR', sans-serif; font-size:1em; }
+input[type="submit"] { cursor:pointer; }
+button { cursor:pointer; }
+table { border-collapse: collapse; }
+
+textarea { resize: none; }
+textarea, select { font-family: 'Noto Sans KR', sans-serif; font-size:1em; }
+select { margin:0; }
+p { margin:0;padding:0;word-break:normal; }
+hr { display:none; }
+pre {  white-space: pre-wrap; overflow-y:auto; font-size:1.1em; }
+a { color:inherit;text-decoration:none; }
+
+*, :after, :before {  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; ; }
+.cd::after { clear: both; display: block; content:""; }
+
+/*기본 : 배경색 , 글씨 색상*/
+body{background-color:#000000; color:white; }
+
+/*헤더*/
+header{display:block; width:100%;}
+.header_div{width:1200px; height:100px; margin:0 auto;}
+.header_menu{width:350px; float:left; margin-top:50px; font-size:16px; }
+.header_menu li{float:left; margin-right:19px; font-size:14px; }
+.header_menu .on{text-decoration:underline;}
+
+header .right_menu{float:right;}
+header .right_menu .hambergur_menue{ width:30px; height:20px; margin-top: 50px; cursor:pointer;}
+header .right_menu .hambergur_menue span{ display: block; width:100%; margin-bottom:5px; height:3px; background:white;  }
+
+/*오른쪽 사이드 메뉴 : right_side_menu*/
+header .rightside_menu{  margin-top:-100px; width:500px; height:100%; background:black; position:fixed; z-index:99; right:-600px; font-size:60px; font-weight:550;  color:#999999;}
+header .rightside_menu .top_menu{margin-left:70px; margin-top:150px; }
+header .rightside_menu .top_menu p{width:40px; height:8px; background:#999999; display:inline-block; margin-bottom:20px;}
+header .rightside_menu .top_menu a{margin-left:30px; }
+
+header .rightside_menu .top_menu .on{color:white;}
+header .rightside_menu .top_menu .on p{background:white;}
+
+header .right_produce{font-size:16px; margin-top:100px; margin-left:70px; font-weight:500; color:white; margin-bottom:70px; }
+header .right_produce .link{text-decoration: underline; margin:7px 0;}
+
+header .rightside_menu .close_btn{position: absolute; margin-left:-50px; top:0; cursor:pointer;}
+
+.right_menu_background .background{ width:100%; height:100%; position:fixed; z-index:3; background:rgba(0,0,0,0.5); display:none; }
+.right_menu_background .on { display:block;}
+
+
+
+/*메인 상단 : main_top */
+.main_top {display:block; width:1200px; height:388px;  margin:0 auto;}
+.main_top .project{position:absolute; font-size:60px; letter-spacing: 2px; font-weight: 600; margin-top:74px; }
+.main_top .interaction{position:absolute; font-size:14px; letter-spacing: 7px; margin-top: 160px; }
+.main_top .content{position:absolute; margin-top:230px; font-size:16px; }
+
+.main_top .project .line{width:100%; background:#292929; height:10px; margin-top:-20px;}
+
+/*메인 슬라이드 : main_slide */
+.main_slide{ position:relative; display:block; width:100%; height:805px;  margin:0 auto; overflow:hidden; }
+.main_slide img{width:100%; height:800px;}
+.main_slide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background:#0000ff !important;}
+.main_slide .swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{margin-top:796px; bottom:0 !important; }
+.main_slide .swiper-pagination-progressbar{background:rgb(0,0,0,0) !important;}
+
+.main_slide .swiper-slide .subject{font-size:60px; position:absolute; margin-top:600px;  
+    width:1200px; height:86px; margin:0 auto; left:50%; margin-left:-600px; margin-top:600px; 
+    overflow:hidden; text-overflow: ellipsis; white-space: nowrap; z-index:1; padding-right:40px; }
+.main_slide .swiper-slide .content{ position: absolute; font-size:16px; padding-right:90px;
+    width:1200px; height:22.4px; margin:0 auto; left:50%; margin-left:-600px; margin-top:690px; 
+    overflow:hidden; text-overflow: ellipsis; white-space: nowrap; z-index:1;  }
+.main_slide .swiper-slide .date{position:absolute; font-size: 14px; color:#eeeeee;  
+    width:1200px; margin:0 auto; left:50%; margin-left:-600px; margin-top:720px; z-index:1;  }
+.main_slide .swiper-slide .eff{ position:absolute; width:100%; height:100%; background:rgba(0, 0, 0, 0.5);}
+
+.main_slide .swiper-container .swiper-slide .sub_title{width:1200px; height:100%; position:absolute; left:50%; margin-left:-600px; } 
+.main_slide .swiper-container .swiper-slide .left{ -webkit-transform: rotate(-90deg); position:absolute; width:800px; height:18px; font-size:18px; top:55%; margin-left:-50%; left:210px;}
+
+.main_slide .swiper-container .swiper-slide .right{  -webkit-transform: rotate(90deg); position:absolute; width:800px; height:18px; font-size:18px; margin-left:50%; left:190px; margin-top:27%; }
+
+.main_slide .swiper-container .swiper-slide .content_wrap{ display:inline-block; float:right; }
+.main_slide .swiper-container .swiper-slide .line{display:inline-block ;width:80px; height:1px; background:white; margin-bottom:5px;}
+.main_slide .swiper-container .swiper-slide  .category {margin-left:15px;}
+
+
+
+/*메인 컨텐츠 : main_content*/
+.main_content{display:block; width:1200px; height:2100px; margin:0 auto;}
+.main_content .sub_content {width:590px; height:420px; float:left; margin-top:50px; }
+.main_content .sub_content:nth-child(2n) {margin-left:20px;}
+
+.main_content .sub_content .imgbox{width:590px; height:300px; border-radius:5px; 
+    background-image : url('../img/main_slide01.png'); background-position: center; background-repeat:no-repeat; background-size:100%; }
+
+.main_content .sub_content h2{width:100%; font-size:18px; margin-top:25px; height:24px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main_content .sub_content .content{width:100%; font-size:16px; margin-top:10px; height:22px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main_content .sub_content .day{width:100%; font-size:14px; color:#eeeeee; margin-top:12px;}
+
+/*메인 히스토리 : main_history*/
+.main_history {display:block; width:100%; height:230px; background:#343434;}
+.main_history .history{width:1200px; margin:0 auto;  }
+.main_history .history .next{display:block;  position:absolute; font-size:16px; margin-top:80px; }
+.main_history .history .history_content{display:block; position:absolute; font-size:60px; margin-top:96px; font-weight:700;  }
+.main_history .history .line{width:200px; height:10px; background:black; position:absolute; margin-top:163px;}
+
+/*푸터: footer*/
+footer{width:100%; height:400px; font-size:16px; background-image : url('../img/footer_img.png'); background-repeat:no-repeat; background-position:right; overflow:hidden;  }
+footer .footer_wrap{width:1200px; margin:0 auto; }
+footer .footer_partition{width:400px; float:left; margin-top:55px; }
+footer .footer_partition li{float:left; width:100%;}
+footer .footer_partition li p{float:left; height:60px; display:inline-block; margin-top:5px; font-weight:200; }
+footer .footer_partition li .title{font-weight:600;}
+footer .footer_partition li p:nth-child(2n-1){width:120px; }
+footer .footer_partition:nth-child(3) .title{width: 177px;}
+
+
+
+
+
+/******************************** History********************************/
+.sub02_content{display:block; width:100%; height:2000px; }
+
+.sub02_content .img_box{width:33.3%; height:500px; background-image: url('../img/main_slide01.png'); background-repeat:no-repeat; background-position: center;  background-size:100%; float:left; }
+.sub02_content .sub_hover{position: absolute; width:33.3%; height:500px; background:rgba(0,0,0,0.5); font-size:16px; text-align:center; opacity:0;  transition:0.5s; }
+.sub02_content .sub_hover:hover{opacity:1;}
+.sub02_content .sub_hover .content_wrap{position:absolute; width:100%; top:50%; margin-top:-35px; }
+
+.paging{display:block; margin:0 auto; width:400px; height:50px; background:white; color:black; margin-top:190px; margin-bottom:190px; }
+
+.history .line_journal { width: 235px; height: 10px; background: black; position: absolute; margin-top: 163px;}
+
+
+/******************************* Journal ******************************/
+.sub03 .journal_list {width:1200px; height:1750px;  margin:0 auto; }
+.sub03 .journal_list li{width:100%; height:10%; border-bottom:1px solid white; display:block; }
+.sub03 .journal_list li:first-child{border-top:1px solid white;}    
+.sub03 .journal_list li a{padding: 0 5px; display:block; width:1200px; position:absolute; margin-top:55px;  }
+.sub03 .journal_list li p{font-size:32px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sub03 .journal_list li span{margin-top:7px; display:block;}
+
+
+/****************************** About *******************************/
+.sub04_profile{display:block; width:1200px; margin:0 auto;}
+.sub04_profile .img_box{width:420px; height:600px; background-image: url('../img/kobub.png'); background-repeat:no-repeat; background-position: center;  background-size:100% 100%; }
+.sub04_profile .profile_img{ width:420px;height:100%; float:left; }
+.sub04_profile .profile_img p{font-size:20px;  }
+.sub04_profile .profile_img span{display:block; font-size:16px; margin-top:10px; }
+
+.sub04_profile .sub04_career{width:700px; height:100%; margin-left: 77px; float:right;}
+.sub04_profile .sub04_career h2{font-size:20px;}
+.sub04_profile .sub04_career p{font-size:16px; margin-top:20px; line-height:35px; }
+.sub04_profile .sub04_career .wrap{width:100%; margin-top:50px; }
+.sub04_profile .sub04_career .wrap .content{width:33.3%; float:left; padding-right:40px; }
+.sub04_profile .sub04_career .wrap .content h2{font-size:20px; background:#292929; display:inline-block; }
+.sub04_profile .sub04_career .wrap .content .content_list{display:block; margin-top:20px; }
+.sub04_profile .sub04_career .wrap .content .content_list li{font-size:16px; line-height:35px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.sub04_profile .sub04_career .wrap .content .content_list li a {text-decoration: underline ;}
+.sub04_profile .sub04_career .wrap .content .margin{width:50px; height:30px;}
+
+.sub04_produce{width:1200px; height:560px; float:left; border-top:1px solid #FFFFFF; border-bottom:1px solid #FFF; margin-top:130px; }
+.sub04_produce .sub04_produce_content{width:100%; height:150px;  margin-top:22px; padding:20px; } 
+.sub04_produce .sub04_produce_content .left{float:left; width:600px; height:100%; }
+.sub04_produce .sub04_produce_content .left h2{font-size:20px; background:#292929; display:inline-block;}
+.sub04_produce .sub04_produce_content .left p{font-size:16px; margin-top:20px; }
+
+.sub04_produce .sub04_produce_content .right{float:right; width:320px; height:60px; margin-top:28px; margin-right:100px; }
+.sub04_produce .sub04_produce_content .right .line{display:inline-block; width:200px; height:1px;  margin-top:29px; background:white;  }
+.sub04_produce .sub04_produce_content .right .imgbox{width:60px; height:60px;  display:inline-block; float:right; overflow:hidden; }
+.sub04_produce .sub04_produce_content .right .imgbox img{width:100%; height:100%; margin-left:0;}
+
+.sub04_next{ float:left; margin-top:214px; }
+
+
+/***************************** Contact **********************************/
+.sub05_time{display:block; width:1200px; margin:0 auto; }
+.sub05_time .seoul{font-size:16px; } 
+.sub05_time .time_wrap .time{font-size:60px; font-weight: 700; margin-top:34px;}
+.sub05_time .time_wrap .line{width:255px; height:10px; background:#292929; margin-top:-22px;  }
+.sub05_time .send_button{font-size:20px; width:290px; height:70px; background:white; 
+    color:black; border-radius:7px; text-align:center; line-height:70px; 
+    margin-top:40px; box-shadow: 0px 0px 20px white; }
+
+.sub05_job{display:block; margin:0 auto; width:1200px; margin-top:150px;   }
+.sub05_job .content{display:block; height:118px; text-align:right; font-size:100px; font-weight:800; color:black; text-shadow: 0px 0px 5px #292929; }
+
+.sub05_imgslide {display:block; width:100%; height:300px; }
+.sub05_imgslide .swiper-container .swiper-slide{width:300px; height:300px; color:black; background-image: url('../img/main_slide01.png'); background-repeat:no-repeat; background-position: center;  background-size:100%;}
+
+.sub05_next{ width: 245px; height: 10px; background: black; position: absolute; margin-top: 163px;}
+.sub05_bottom {margin-bottom:100px;}
+
+/****************************** View ************************************/
+.main_top .back{position:absolute; display:block; margin-top:220px; }
+.main_top .back p{display:inline-block; margin-left:15px; font-size:16px; text-decoration:underline; }
+
+.view_content{display:block; width:1200px; margin:0 auto; padding:40px; }
+.copy_right {display:block; width:1200px; margin:0 auto; }
+.copy_right img{display:block; margin:0 auto; width:332px; margin-top:50px; }
